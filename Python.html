@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Python Program's
+    </title>
+</head>
+<body>
+    <h2>Program to ask user choice and print menu</h2>
+    <hr>
+    <pre>
+        print("Welcome! To Tokyo Restaurant.")
+        print("""MENU:
+        ----------------------------------------
+        LUNCH:
+        1)MoMo
+            a)Buff momo: Rs.220
+            b)Chicken momo: Rs.220
+            c)Veg momo: Rs.190
+        2)Burger
+            a)Crunchy Chicken Burger: Rs.250
+            b)Veg Burger: Rs.230
+        3)Roll
+            a)Veg Roll: Rs.270
+            b)Chicken Roll: Rs.290
+        4)Chicken Choila,Buff Choila: Rs.240
+        5)Paneer Chilly: Rs.210
+        ----------------------------------------
+        SNACKS:
+        1)Chaat: Rs.70
+        2)Pav Bhaji: Rs.80
+        3)Samosa(Per Pcs.): Rs.30
+        4)Veg Pakoda: Rs.70
+        ----------------------------------------
+        DRINKS:
+        1)Hot Drink
+            a)Milk Coffee: Rs.80
+            b)Hot Chocolate: Rs.190
+            c)Lemon Tea: Rs.90
+            d)Milk Tea: Rs.40
+            e)Black Tea: Rs.25
+        2)Cold Drink
+            a)Milkshake: Rs.270
+            b)Lassi: Rs.180
+            c)Beverage(Coke,Fanta,Sprite,Pepsi): Rs.70
+            d)Mineral Water: Rs.30
+        ------------""")
+        print("""Menu:
+        1)Lunch
+        2)Snacks
+        3)Drinks""")
+        choice1=str(input("What do would you like to have? "))
+        print("-----------------------------------------------")
+        choice1=choice1.lower()
+        if choice1=="lunch" or choice1=="1":
+            print("""1)MoMo
+        2)Burger
+        3)Roll
+        4)Chicken Choila: Rs.240
+        5)Buff Choila: Rs.240
+        6)Paneer Chilly: Rs.210""")
+            choice2=str(input("What would you like to have? "))
+            print("-----------------------------------------------")
+            choice2=choice2.lower()
+            if choice2 == "chicken choila" or choice2=="4":
+                print("Your order of Chicken Choila has been placed.")
+            elif choice2 == "paneer chilly" or choice2=="6":
+                print("Your order of Paneer Chilly has been placed.")
+            elif choice2 == "buff choila" or choice2=="5":
+                print("Your order of Buff Choila has been placed.")
+            elif choice2=="momo" or choice2=="1":
+                print("""1)Buff momo: Rs.220
+        2)Chicken momo: Rs.220
+        3)Veg momo: Rs.190""")
+                choice3=str(input("What kind of momo would you like to have? "))
+                print("-----------------------------------------------")
+                choice3=choice3.lower()
+                if choice3=="buff momo" or choice3=="1":
+                    print("Your order of Buff momo has been placed.")
+                elif choice3=="chicken momo" or choice3=="2":
+                    print("Your order of Chicken momo has been placed.")
+                elif choice3=="veg momo" or choice3=="3":
+                    print("Your order of Veg momo has been placed.")
+                else:
+                    print("Sorry! We don't have what you have ordered for.")
+            elif choice2=="burger" or choice2=="2":
+                print("""1)Crunchy Chicken Burger: Rs.250
+        2)Veg Burger: Rs.230""")
+                choice3=str(input("What type of burger would you like to have? "))
+                print("-----------------------------------------------")
+                choice3=choice3.lower()
+                if choice3=="crunchy chicken burger" or choice3=="1":
+                    print("Your order of Crunchy Chicken Burger has been placed.")
+                elif choice3=="veg burger" or choice3=="2":
+                    print("Your order of Veg Burger has been placed.")
+                else:
+                    print("Sorry! We don't have what you have ordered for. ")
+            elif choice2=="roll" or choice2=="3":
+                print("""1)Veg Roll: Rs.270
+        2)Chicken Roll: Rs.290""")
+                choice4=str(input("What kind of roll would you like to have? "))
+                print("-----------------------------------------------")
+                choice4=choice4.lower()
+                if choice4=="veg roll" or choice4=="1":
+                    print("Your order of Veg Roll has been placed.")
+                elif choice4=="chicken roll" or choice4=="2":
+                    print("Your order of Chicken Roll has been placed")
+                else:
+                    print("Sorry! We don't have what you ordered for.")
+        elif choice1=="snacks" or choice1=="2":
+            print("""1)Chaat: Rs.70
+        2)Pav Bhaji: Rs.80
+        3)Samosa(Per Pcs.): Rs.30
+        4)Veg Pakoda: Rs.70""")
+            choice5=str(input("What would you like to have? "))
+            print("-----------------------------------------------")
+            choice5=choice5.lower()
+            if choice5=="chaat" or choice5=="1":
+                print("Your order of Chaat has been placed.")
+            elif choice5=="pav bhaji" or choice5=="2":
+                print("Yor order of Pav Bhaji has been placed.")
+            elif choice5=="veg pakoda" or choice5=="4":
+                print("Your order of Veg Pakoda has been placed.")
+            elif choice5=="samosa" or choice5=="3":
+                print("Your order of Samosa has been placed.")
+            else:
+                print("Sorry! We don't have what you have ordered for.")
+        elif choice1=="drinks" or choice1=="3":
+            print("""1)Hot Drink
+        2)Cold Drink""")
+            choice6=str(input("What would you like to have? "))
+            print("-----------------------------------------------")
+            choice6=choice6.lower()
+            if choice6=="hot drink" or choice6=="1":
+                print("""1)Milk Coffee: Rs.80
+        2)Hot Chocolate: Rs.190
+        3)Lemon Tea: Rs.90
+        4)Milk Tea: Rs.40
+        5)Black Tea: Rs.25""")
+                choice7=str(input("What would you like to have? "))
+                print("-----------------------------------------------")
+                choice7=choice7.lower()
+                if choice7=="milk coffee" or choice7=="1":
+                    print("Your order of Milk Coffee has been placed.")
+                elif choice7=="hot chocolate" or choice7=="2":
+                    print("Your order of Hot Chocolate has been placed.")
+                elif choice7=="milk tea" or choice7=="4":
+                    print("Your order of Milk Tea has been placed.")
+                elif choice7=="black tea" or choice7=="5":
+                    print("Your order of Black Tea has been placed.")
+                elif choice7=="lemon tea" or choice7=="3":
+                    print("Your order of Lemon Tea has been placed.")
+                else:
+                    print("Sorry! We don't have what you have ordered for.")
+            elif choice6=="cold drink" or choice6=="2":
+                print("""1)Milkshake: Rs.270
+        2)Lassi: Rs.180
+        3)Beverage(Coke,Fanta,Sprite,Pepsi): Rs.70
+        4)Mineral Water: Rs.30""")
+                choice7=str(input("What would you like to have? "))
+                print("-----------------------------------------------")
+                choice7=choice7.lower()
+                if choice7=="milkshake" or choice7=="1":
+                    print("Your order of Milkshake has been placed.")
+                elif choice7=="lassi" or choice7=="2":
+                    print("Your order of Lassi has been placed.")
+                elif choice7=="beverage" or choice7=="3":
+                    print("""1)Coke: Rs.30
+        2)Fanta: Rs.30
+        3)Sprite: Rs.30
+        4)Pepsi: Rs.30""")
+                    choice8=str(input("What would you like to have? "))
+                    print("-----------------------------------------------")
+                    choice8=choice8.lower()
+                    if choice8=="coke" or choice8=="1":
+                        print("Your order of Coke has been placed.")
+                    elif choice8=="fanta" or choice8=="2":
+                        print("Your order of Fanta has been placed.")
+                    elif choice8=="sprite" or choice8=="3":
+                        print("Your order of Sprite has been placed.")
+                    elif choice8=="pepsi" or choice8=="4":
+                        print("Your order of Pepsi has been placed.")
+                    else:
+                        print("Sorry! We don't have what you have ordered for.")
+                elif choice7=="mineral water" or choice7=="4":
+                    print("Your order of Mineral Water has been placed")
+                else:
+                    print("Sorry! We don't have what you have ordered for.")
+        else:
+            print("Sorry! We don't have what you have ordered for. ") 
+    </pre>
+    <hr>
+</body>
